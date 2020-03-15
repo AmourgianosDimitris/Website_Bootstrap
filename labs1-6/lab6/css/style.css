@@ -1,0 +1,182 @@
+
+h1, h2 {
+	text-align:center;
+}
+
+p {
+	color: grey;
+}
+
+.menu {
+	padding: 14px 16px;
+	background-color: #DCDCDC;
+	width: 100%;
+	table-layout: fixed;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+.i_frame {
+	min-height: 500px; 
+	width: 100%; 
+}
+
+
+.centered {
+	
+	background-color: #C8C8C8 ;	
+	color: black;
+	font-size:300%;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+
+.parallax__1 {
+  background-image: url("../img/01.png");
+  min-height: 400px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 769px) {
+  .parallax__1 {
+    background-image: url("../img/13.png");
+  }
+}
+
+.parallax__2 {
+  background-image: url("../img/02.png");
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax__3 {
+  
+  background-image: url("../img/03.png");
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax__4 {
+  background-image: url("../img/04.png");
+   min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax__5 {
+ 
+  background-image: url("../img/05.png");
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax__6 {
+  
+  background-image: url("../img/06.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image__size {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_forms {	
+	background-color: #DCDCDC;
+	width: 100%;	
+}
+
+.button {
+  background-color: #303030;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.input_style, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+.date_input {
+  width: 25%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+.payment {
+  width: 20%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 6px; 
+  resize: vertical
+}
+
+.button_style {
+  background-color: #424949;
+  border: 1px solid #ccc;
+  color: white;
+  width: 20%
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;    
+}

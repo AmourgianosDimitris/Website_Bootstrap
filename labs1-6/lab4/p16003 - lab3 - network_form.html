@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Φόρμα Δικτύου</title>
+	<!-- Αμουργιανός Δημήτρης - Π16003 -->
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div>
+		<table class="menu">			
+			<tr>
+				<td> <a href= "p16003 - lab 2.html"> Ποδόσφαιρο </a> </td>
+				<td> <a href= "p16003 - lab3 - contact_form.html"> Φόρμα Επικοινωνίας</a> </td>				
+			</tr>
+		</table>
+	</div>
+
+	<br><br><br>
+	<form name="network_form">
+	<fieldset style="border-radius: 5px; background-color: #f2f2f2; padding: 30px; width: 50%; margin:auto;">
+		<legend style="background-color: grey; color: white;">Στοιχεία Δικτύου</legend>
+		<label for="fname">Διεύθυνση IP</label>
+   			<input type="text" id="IP_address" name="IP_address" placeholder="192.10.100.192">
+   			<br>
+		<label>Μάσκα Δικτύου: </label> 
+		 <input placeholder="255.255.255.0" type="text" name="mask" id="mask" ><br>
+
+		  <button type="button" id="net_button"> Υπολογισμός </button> 
+		  <button type="reset" value="Καθαρισμός"> Καθαρισμός </button>
+
+	</fieldset>
+</form>
+
+<form name="show_form" id="confirm_form" style="display: none;">
+		<fieldset style="border-radius: 5px; background-color: #f2f2f2; padding: 30px; width: 50%; margin:auto;">
+			<legend style="background-color: grey; color: white;">Είστε σίγουροι ότι θέλετε να αποστείλετε το παρακάτω email;</legend>
+			<label>Ονοματεπώνυμο: </label>
+			<label id="id_name"></label> <br>
+			<label>Τηλέφωνο: </label> 
+	 		<label id="id_phone"></label><br>
+			<label>E-mail: </label> 
+	 		<label id="id_email"></label><br>
+			<label>Αίτημα/Ερώτημα: </label>
+			<label id="id_question"></label> <br>
+			<button type="button" id="btn_send_email"> Αποστολή </button>
+			<button type="button" id="btn_back" onclick="goBack()"> Ακύρωση </button> 
+		</fieldset">
+	</form>
+
+
+	<script src="js/network_scripts.js"></script>
+</body>
+</html>

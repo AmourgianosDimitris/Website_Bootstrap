@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Φόρμα Επικοινωνίας</title>
+	<!-- Αμουργιανός Δημήτρης - Π16003 -->
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div>
+		<table class="menu">			
+			<tr>
+				<td> <a href= "p16003 - lab 2.html"> Ποδόσφαιρο </a> </td>
+				<td> <a href= "p16003 - lab3 - network_form.html"> Φόρμα Δικτύου</a> </td>				
+			</tr>
+		</table>
+	</div>
+
+	<br><br><br>
+	<form name="contact_form">
+	<fieldset style="border-radius: 5px; background-color: #f2f2f2; padding: 30px; width: 50%; margin:auto;">
+
+		<legend style="background-color: grey; color: white;">Στοιχεία Δικτύου</legend>
+
+		<label for="fname">Ονοματεπώνυμο</label>
+   		<input type="text" id="name" name="name" required><br>
+		
+		<label>Τηλέφωνο: </label> 
+		<input type="tel" name="phone" id="phone" pattern="[0-9]{10}"><br>
+
+		<label>E-mail: </label> 
+		<input placeholder="example@unipi.gr" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+
+		<label>Αίτημα/Ερώτημα </label> 
+		<textarea placeholder="Γράψτε εδώ το ερώτημα/αίτημα σας..." type="question" name="question" id="question" rows="3" cols="30" required></textarea><br>
+
+		<button type="button" id="btn_send"> Αποστολή </button> 
+		<button type="reset" value="Καθαρισμός"> Καθαρισμός </button> 
+
+	</fieldset>
+	</form>
+
+	<br><br><br>
+
+	<form name="show_form" id="confirm_form" style="display: none;">
+		<fieldset style="border-radius: 5px; background-color: #f2f2f2; padding: 30px; width: 50%; margin:auto;">
+			<legend style="background-color: grey; color: white;">Είστε σίγουροι ότι θέλετε να αποστείλετε το παρακάτω email;</legend>
+			<label>Ονοματεπώνυμο: </label>
+			<label id="id_name"></label> <br>
+			<label>Τηλέφωνο: </label> 
+	 		<label id="id_phone"></label><br>
+			<label>E-mail: </label> 
+	 		<label id="id_email"></label><br>
+			<label>Αίτημα/Ερώτημα: </label>
+			<label id="id_question"></label> <br>
+			<button type="button" id="btn_send_email"> Αποστολή </button>
+			<button type="button" id="btn_back" onclick="goBack()"> Ακύρωση </button> 
+		</fieldset">
+	</form>
+
+
+
+<script src="js/contact_scripts.js"></script>
+</body>
+</html>
